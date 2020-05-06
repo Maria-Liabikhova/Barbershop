@@ -18,27 +18,32 @@
     &--profit
       border: 1px dashed red
       padding-bottom: 70px
-      &__list
-        display: flex
-        list-style: none
-        padding-left: 0
-        &:after
-          content: ""
-          display: block
-          width: 20px
-          height: 20px
-          position: absolute
-          left: 50%
-          top: 100%
-          background-color: #ffffff
     &--news
       border: 5px dashed green
       padding-bottom: 30px
     &--contacts
-    border: 5px dashed orange
+      border: 5px dashed orange
   &__title
     font-size: 30px
     display: flex
     justify-content: center
+  &__list
+    display: flex
+    list-style: none
+    padding-left: 0
+  &__title--profits
     position: relative
-     
+    margin-bottom: 60px
+    &:after
+      content: ""
+      display: block
+      width: 20px
+      height: 20px
+      position: absolute
+      left: 50%
+      top: 100%
+      background-color: #ffffff
+      transform: translate(-10px, 20px) rotate(45deg)
+  &__text--profit
+    padding-right: 25px
+    text-align: center
