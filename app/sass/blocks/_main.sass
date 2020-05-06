@@ -7,6 +7,8 @@
   margin-left: auto
   margin-right: auto
   align-items: center
+  &__link
+    text-decoration: none
   &__logo
     padding-top: 60px
     padding-bottom: 60px
@@ -19,8 +21,11 @@
       border: 1px dashed red
       padding-bottom: 70px
     &--news
+      display: flex
       border: 5px dashed green
       padding-bottom: 30px
+      background-color: #ffffff
+      color: #000000
     &--contacts
       border: 5px dashed orange
   &__title
@@ -49,3 +54,9 @@
     text-align: center
     &--chip
       padding-right: 0
+  &__news
+    flex-grow: 1
+    border: 1px dashed purple
+  &__photo
+    flex-grow: 1
+    border: 2px dashed brown
