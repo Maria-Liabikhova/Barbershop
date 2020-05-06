@@ -6,17 +6,39 @@
   width: 924px
   margin-left: auto
   margin-right: auto
+  align-items: center
   &__logo
     padding-top: 60px
     padding-bottom: 60px
     border: 1px dashed yellow
      // (высрту вымерила по макету в figma)
   &__section
+    width: 100%
+    display: flex
     &--profit
       border: 1px dashed red
       padding-bottom: 70px
+      &__list
+        display: flex
+        list-style: none
+        padding-left: 0
+        &:after
+          content: ""
+          display: block
+          width: 20px
+          height: 20px
+          position: absolute
+          left: 50%
+          top: 100%
+          background-color: #ffffff
     &--news
-    border: 1px dashed green
-    padding-bottom: 30px
+      border: 5px dashed green
+      padding-bottom: 30px
     &--contacts
-    border: 1px dashed orange  
+    border: 5px dashed orange
+  &__title
+    font-size: 30px
+    display: flex
+    justify-content: center
+    position: relative
+     
