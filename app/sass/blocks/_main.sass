@@ -1,17 +1,21 @@
 // main
 .main
   border: 1px dashed pink
-  position: absolute
   display: flex
+  flex-direction: column
   width: 924px
-  height: 1500px
-  justify-content: center
-  // (высрту вымерила по макету в figma)
-  left: 15%
+  margin: 0 15%
   &__logo
     padding-top: 60px
+    padding-bottom: 60px
+    border: 1px dashed yellow
      // (высрту вымерила по макету в figma)
-   
- 
-
-  
+  &__section
+    &--profit
+      border: 1px dashed red
+      padding-bottom: 70px
+    &--news
+    border: 1px dashed green
+    padding-bottom: 30px
+    &--contacts
+    border: 1px dashed orange  
