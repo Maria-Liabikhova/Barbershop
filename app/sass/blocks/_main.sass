@@ -65,7 +65,7 @@
         position: absolute
         background-image: url("../img/line.png")
         right: 50%
-        bottom: 33%
+        bottom: 40%
   &__title--news
     text-align: start
     padding-bottom: 40px
@@ -117,20 +117,45 @@
     border: 0
     width: 140px
     height: 40px
-
   // третий блок
-  &__section--contacts
+  &__section
+    &--contacts
+      margin-bottom: 30px
+      display: flex
+      padding-bottom: 30px
+      background-color: #ffffff
+      color: #000000
+      position: relatisve
+      &:after
+        content: ""
+        display: block
+        width: 7px
+        height: 250px
+        position: absolute
+        left: 50%
+        bottom: 7%
+        background-image: url("../img/line.png")
+      // левая часть 
+  &__adress
     display: flex
-    padding-bottom: 30px
-    background-color: #ffffff
-    color: #000000
-    position: relatisve
-  //   &:after
-  //     content: ""
-  //     display: block
-  //     height: 300px
-  //     width: 7px
-  //     position: absolute
-  //     background-image: url("../img/line.png")
-  //     right: 50%
-  //     bottom: 25%
+    flex-direction: column
+    width: 50%
+    padding: 30px 30px 30px 70px
+  &__title--adress
+    margin-right: auto
+  &__link--contacts
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 40px
+    width: 140px
+    background-color: #000000
+    color: #ffffff
+    margin-top: auto
+    &:hover
+      color: #ffffff
+  &__notice
+    width: 50%
+    padding: 30px 70px 30px 70px
+    display: flex
+    flex-direction: column
