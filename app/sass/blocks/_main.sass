@@ -1,6 +1,5 @@
 // main
 .main
-  border: 1px dashed pink
   display: flex
   flex-direction: column
   width: 924px
@@ -15,7 +14,6 @@
   &__logo
     padding-top: 60px
     padding-bottom: 60px
-     // (высрту вымерила по макету в figma)
   &__section
     width: 100%
     display: flex
@@ -31,6 +29,8 @@
     width: 100%
   &__item
     width: calc(100%/3)
+    padding-right: 5px
+    padding-left: 5px
   &__title
     font-size: 30px
     text-align: center 
@@ -58,31 +58,49 @@
       padding-bottom: 30px
       background-color: #ffffff
       color: #000000
-    &__text
-      margin-bottom: 0
-
-      // третий блок
-  &__section
-    &--contacts
-      border: 5px dashed orange
-
-  
-  
-  
-  
-
+      position: relatisve
+      &:after
+        border: 1px dashed red
+        content: ""
+        display: block
+        height: 20%
+        width: 20px
+        position: absolute
+        background-image: url("../img/line.png")
+        right: calc(50% - 10px)
+        
+  &__title--news
+    text-align: start
   &__news
     border: 1px dashed purple
+    display: flex
+    flex-direction: column
     width: 50%
-    padding: 30px 0 30px 30px
+    padding: 30px 30px 30px 30px
+  &__list--news
+    border: 1px dashed pink
+    display: flex
+    flex-direction: column
+  &__text
+    margin-bottom: 0
+  &__item--news
+    width: 100%
+    padding-right: 0
+    padding-left: 0
+  &__link--all-news
+    height: 40px
+    width: 140px
+    background-color: #000000
+    color: #ffffff
+    text-align: center
   &__photo
     border: 2px dashed brown
     width: 50%
     padding: 30px 40px 30px 40px
-  &__list--news
-    display: flex
-    flex-direction: column
- 
   &__gallery
     display: flex
     flex-direction: column
+          // третий блок
+  // &__section
+  //   &--contacts
+  //     border: 5px dashed orange
