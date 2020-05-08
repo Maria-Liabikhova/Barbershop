@@ -96,42 +96,48 @@
 		</section>
 		<section class="main__section main__section--contacts">
 			<div class="main__adress">
-				<h2 class="main__title main__title--adress">Контактная информация</h2>
+				<h2 class="main__title main__title--contacts">Контактная информация</h2>
 				<p class="main__text">
 					Барбершоп "Бородинский"<br>
 					Адрес:г.Санкт-Петербург, Б.Конюшенная. д.19/8<br>
 					Телефон:+7(495)666-02-66
-				</p>
+				</p><br/>
 				<p class="main__text">
 					Время работы:<br>
 					пн-пт: с 10:00 до 22:00<br>
 					сб-вс:с 10:00 до 19:00
-				</p>
-				<a href="#" class="main__link main__link--contacts">Как проехать</a>
-				<a href="#" class="main__link main__link--contacts">Обратная связь</a>
+				</p><br/>
+				<div class="main__links">
+					<a href="#" class="main__link main__link--contacts">Как проехать</a>
+					<a href="#" class="main__link main__link--contacts">Обратная связь</a>
+				</div>
 			</div>
-			<div class="main__notice">
-				<h2 class="main__title main__title--notice">Записаться</h2>
-				<p class="main__text main__text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+			<div class="main__sign-up">
+				<h2 class="main__title main__title--contacts">Записаться</h2>
+				<p class="main__text main__text">Укажите желаемую дату и время и мы свяжемся <br/>с вами для подтверждения брони</p><br/>
 				<form action="/#">
+					<div class="main__contacts--form">
+						<p>
+							<label for="date" class="main__label-for">Дата</label><br/>
+							<input type="date" id="date" name="date" value="2017-10-08" class="main__input">
+						</p>
+						<p>
+							<label for="time" class="main__label-for">Время</label><br/>
+							<input type="time" id="time" name="time" value="10:00" class="main__input">
+						</p>
+					</div>
+					<div class="main__contacts--form">
+						<p>
+							<lable for="fname" class="main__label-for">Ваше имя</lable><br/>
+							<input type="text" id="fname" name="fname" value="Борода" class="main__input">
+						</p>
+						<p>
+							<label for="tel" class="main__label-for">Телефон</label><br/>
+							<input type="tel"id="tel"name="tel" value="+7(123)456-78-90" class="main__input">
+						</p>
+					</div>
 					<p>
-						<label for="date">Дата</label>
-						<input type="date" id="date" name="date" value="2017-10-08">
-					</p>
-					<p>
-						<label for="time">Время</label>
-						<input type="time" id="time" name="time" value="10:00">
-					</p>
-					<p>
-						<lable for="fname">Ваше имя</lable>
-						<input type="text" id="fname" name="fname" value="Борода">
-					</p>
-					<p>
-						<label for="tel">Телефон</label>
-						<input type="tel"id="tel"name="tel" value="+7(123)456-78-90">
-					</p>
-					<p>
-						<input type="submit" value="Отправить"> 
+						<input type="submit" value="Отправить" class="main__contacts--submit"> 
 					</p>      
 				</form>
 			</div>
