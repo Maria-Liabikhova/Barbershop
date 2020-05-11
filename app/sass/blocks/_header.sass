@@ -5,6 +5,8 @@
   background-color: $black
   justify-content: center
   height: 60px
+  &--icon
+    padding-right: 10px
   &__list
     display: flex
     width: 924px
@@ -12,28 +14,29 @@
     padding-left: 0
     margin-bottom: 0
   &__item
-    margin-right: 35px
+    // margin-right: 35px
     &:last-of-type
       margin-left: auto
       margin-right: 0
+      padding-left: 30px
       // flex-grow: 2
       // border: 1px dashed pink
       // display: flex
       // justify-content: flex-end- второй способ выравнить вправо
       // add icon
-      position: relative
-      &:after
-        content: ""
-        display: block
-        width: 70%
-        height: 70%
-        position: absolute
-        left: 0
-        top: 0
-        background-image: url("../img/login.svg")
-        background-size: 100% 100%
-        top: 50%
-        transform: translate(-25px, -50%)
+      // position: relative
+      // &:after
+      //   content: ""
+      //   display: block
+      //   width: 70%
+      //   height: 70%
+      //   position: absolute
+      //   left: 0
+      //   top: 0
+      //   background-image: url("../img/login.svg")
+      //   background-size: 100% 100%
+      //   top: 50%
+      //   transform: translate(-25px, -50%)
         // Базовый сценарий для создания псевдоэл-та
       // position: relative
       // &:after
@@ -49,10 +52,15 @@
     color: $white
     text-decoration: none
     font-size: 14px
-    &:hover
-      color: orange
+    padding: 23px 20px 23px 20px
+    &:hover 
+      background-color: $light-grey
       text-decoration: none
-      border-bottom: 1px solid orange  
+      color: $white
+    &:active
+      background-color: $light-grey
+      text-decoration: none
+      background-color: $lightest-grey
   // &__list
   //   list-style: none
   //   display: flex

@@ -1,4 +1,4 @@
-// main
+//main
 .main
   display: flex
   flex-direction: column
@@ -20,9 +20,12 @@
       background-color: $black
       color: $white
       margin-top: auto
+      &:active
+        background-color: $sand
       &:hover
         color: $white
         text-decoration: none
+        background-color: $sand
   &__logo
     padding-top: 60px
     padding-bottom: 60px
@@ -83,17 +86,16 @@
       padding-bottom: 30px
       background-color: $white
       color: $black
-      position: relatisve
+      position: relative
       &:after
         content: ""
         display: block
-        height: 15%
+        height: 50%
         width: 7px
         position: absolute
         background-image: url("../img/line.png")
         right: 50%
-        bottom: 50%
-        transform: translate(0, 25%)
+        bottom: 30%
   &__news
     display: flex
     flex-direction: column
@@ -123,6 +125,11 @@
     font-size: 14px
     font-weight: 900
     text-transform: uppercase
+    border: 0px
+    &:hover
+      background-color: $sand
+    &:active
+      background-color: $light-sand
     &--submit  
       color: $white
       background: $black
@@ -131,7 +138,11 @@
       height: 40px
       font-size: 14px
       font-weight: 900
-      text-transform: uppercase  
+      text-transform: uppercase
+      &:active
+        background-color: $light-sand  
+      &:hover
+        background-color: $sand
   &__section
     &--contacts
       margin-bottom: 30px
@@ -139,16 +150,15 @@
       padding-bottom: 30px
       background-color: $white
       color: $black
-      position: relatisve
+      position: relative
       &:after
         content: ""
         display: block
         width: 7px
-        height: 15%
+        height: 50%
         position: absolute
         left: 50%
-        bottom: 20%
-        transform: translate(0, 10%)
+        bottom: 30%
         background-image: url("../img/line.png")
   &__adress
     text-align: start
@@ -169,6 +179,8 @@
   &__input
     height: 40px
     width: 140px
+    &:hover
+      border: 1px solid $sand
   &__label-for
     margin: 0
     height: 30px
