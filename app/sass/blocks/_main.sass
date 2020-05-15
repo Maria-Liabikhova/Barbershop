@@ -120,7 +120,7 @@
   &__button
     color: $white
     background: $black
-    border: 0
+    border: none
     width: 140px
     height: 40px
     font-size: 14px
@@ -128,10 +128,14 @@
     text-transform: uppercase
     border: 0px
     cursor: pointer
+    outline: none !important
     &:hover
       background-color: $sand
     &:active
       background-color: $light-sand
+      border: none
+    &:focus
+      border: none
     &--submit  
       color: $white
       background: $black
