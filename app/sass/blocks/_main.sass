@@ -32,9 +32,46 @@
   &__section
     width: 100%
     display: flex
-  &__section  
+    margin-bottom: 30px
     &--profit
       padding-bottom: 70px
+    &--news
+      display: flex
+      padding-bottom: 30px
+      background-color: $white
+      color: $black
+      position: relative
+      background-image: url("../img/bg-pattern.jpg")
+      background-repeat: repeat
+      &:after
+        content: ""
+        display: block
+        height: 50%
+        width: 7px
+        position: absolute
+        background-image: url("../img/line.png")
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+    &--contacts
+      margin-bottom: 30px
+      display: flex
+      padding-bottom: 30px
+      background-color: $white
+      color: $black
+      position: relative
+      background-image: url("../img/bg-pattern.jpg")
+      background-repeat: repeat
+      &:after
+        content: ""
+        display: block
+        width: 7px
+        height: 50%
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        background-image: url("../img/line.png")
   &__list
     display: flex
     list-style: none
@@ -79,24 +116,6 @@
     margin-bottom: 0
     &--profit
       text-align: center
-  &__section
-    margin-bottom: 30px
-    &--news
-      display: flex
-      padding-bottom: 30px
-      background-color: $white
-      color: $black
-      position: relative
-      &:after
-        content: ""
-        display: block
-        height: 50%
-        width: 7px
-        position: absolute
-        background-image: url("../img/line.png")
-        left: 50%
-        top: 50%
-        transform: translate(-50%, -50%)
   &__news
     display: flex
     flex-direction: column
@@ -151,24 +170,6 @@
         background-color: $light-sand  
       &:hover
         background-color: $sand
-  &__section
-    &--contacts
-      margin-bottom: 30px
-      display: flex
-      padding-bottom: 30px
-      background-color: $white
-      color: $black
-      position: relative
-      &:after
-        content: ""
-        display: block
-        width: 7px
-        height: 50%
-        position: absolute
-        left: 50%
-        top: 50%
-        transform: translate(-50%, -50%)
-        background-image: url("../img/line.png")
   &__adress
     text-align: start
     width: 50%
@@ -196,5 +197,4 @@
     padding: 0
     padding-left: 10px
     text-decoration: none
-
 // main END
