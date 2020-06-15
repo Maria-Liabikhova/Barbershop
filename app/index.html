@@ -176,29 +176,30 @@
 	
 <!-- Модальное окно -->
 	<section class="window">
-		<h2>Личный кабинет</h2>
-		<p>Введите свой логин и пароль.</p>
-		<form action="#" method="POST" method="POST">
-			<p>
-				<label for="text_e-mail">Логин</label>
-				<input type="text" id="text_e-mail" name="text_e-mail" value="email@example.com"></br>
-			</p>
-			<p>
-				<label for="password">Пароль</label>
-				<input type="password" id="password" name="password" value="........"></br>
-			</p>
-			<p>
-				<input type="checkbox" id="checkbox" name="checkbox">
-				<label for="checkbox">Запомнить меня</label>
-				<a href="#">Я забыл пароль</a>
-			</p>
-			<button type="button">Войти</button>
+		<h2 class="window__title">ВХОД В личный кабинет</h2>
+		<p class="window__text">ВВЕДИТЕ ЛОГИН И ПАРОЛЬ ДЛЯ ВХОДА В ВАШ КАБИНЕТ ПОЛЬЗОВАТЕЛЯ:</p>
+		<form class="window__form" action="#" method="POST" method="POST">
+			<div class="window__wrap">
+				<!-- <label for="text_e-mail" class="window__label">Логин</label>s -->
+				<input type="text" id="text_e-mail" name="text_e-mail" value="email@example.com" class="window__input"></br>
+			</div>
+			<div class="window__wrap">
+				<!-- <label for="password" class="window__label">Пароль</label> -->
+				<input type="password" id="password" name="password" value="........" class="window__input"></br>
+			</div>
+			<div class="window__wrap window__wrap--line">
+				<input class="window__checkbox" type="checkbox" id="checkbox" name="checkbox">
+				<label for="checkbox" class="window__label window__label--checkbox">Запомнить меня</label>
+				<a href="#" class="window__link window__link--space">Я забыл пароль</a>
+			</div>
+			<button type="button" class="window__button main__button">Войти</button>
+			<a href="#"class="window__link">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+			<button type="reset" class="window__button window__button--reset">
+				<img class="window__img" src="img/cross.svg">
+			</button>
 		</form> 
-		<!-- <form action="#">
-			<input type="submit" value="Закрыть">
-		</form> -->
-		<!-- <button type="button">Закрыть</button> -->
 	</section>
+
 
 	<!-- <section>
 		<h2>Как до нас добраться</h2>
